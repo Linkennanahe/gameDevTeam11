@@ -22388,7 +22388,7 @@ Camera:
   far clip plane: 1000
   field of view: 11.421186
   orthographic: 1
-  orthographic size: 0.9140625
+  orthographic size: 1.6203125
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -24453,6 +24453,75 @@ PolygonCollider2D:
       - {x: -0.16, y: -2.135}
       - {x: -0.12, y: -1.8449999}
       - {x: -0.099999994, y: -1.675}
+--- !u!1001 &4458026392685942130
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 759920141463472663, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 759920141463472663, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 759920141463472663, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 759920141463472663, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 759920141463472663, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 759920141463472663, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.096
+      objectReference: {fileID: 0}
+    - target: {fileID: 759920141463472663, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 759920141463472663, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 759920141463472663, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 759920141463472663, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 759920141463472663, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 759920141463472663, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 759920141463472663, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 759920141463472663, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265649071556546117, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
+      propertyPath: m_Name
+      value: Missle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
 --- !u!1001 &4582765255890776044
 PrefabInstance:
   m_ObjectHideFlags: 0
