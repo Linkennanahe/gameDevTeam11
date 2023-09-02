@@ -261,8 +261,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1481471247}
-  speed: 8
-  distanceBetween: 30
+  speed: 100
+  rotationSpeed: 100
+  distanceBetween: 1
 --- !u!1 &221091368
 GameObject:
   m_ObjectHideFlags: 0
@@ -22408,7 +22409,7 @@ Camera:
   far clip plane: 1000
   field of view: 11.421186
   orthographic: 1
-  orthographic size: 0.8609375
+  orthographic size: 0.7390625
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -24598,6 +24599,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 297321615803243577, guid: 4619fdb1ca10a594c8e12abdd0ed8770, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1098151984750358885, guid: 4619fdb1ca10a594c8e12abdd0ed8770, type: 3}
       propertyPath: m_Name
       value: Enemy
