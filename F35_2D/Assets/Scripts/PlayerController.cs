@@ -15,17 +15,29 @@ public class PlayerController : MonoBehaviour
     public float reduceSpeed;
     public float rotationSpeed;
 
+    // Max and min speeds
+    public float maxSpeed = 5f;
+    public float minSpeed = 1f;
+
+    // Acceleration and deceleration rates
+    public float accelerationRate = 2f;
+    public float decelerationRate = 4f;
+
+    // Current speed
+    private float currentSpeed;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        currentSpeed = normalSpeed;
     }
 
     void FixedUpdate()
     {
         Vector3 forward = transform.up;
-        rb.MovePosition(rb.position + (Vector2)forward * CalculateSpeed() * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + (Vector2)forward * currentSpeed * Time.fixedDeltaTime);
 
         UpdateAnimator();
     }
@@ -45,6 +57,15 @@ public class PlayerController : MonoBehaviour
         {
             Rotate(-rotationSpeed);
         }
+
+        // Calculate the target speed based on input
+        float targetSpeed = CalculateSpeed();
+
+        // Gradually adjust the current speed towards the target speed
+        currentSpeed = Mathf.Lerp(currentSpeed, targetSpeed, Time.deltaTime * (movement == Vector2.zero ? decelerationRate : accelerationRate));
+
+        // Clamp the current speed to stay within the desired bounds
+        currentSpeed = Mathf.Clamp(currentSpeed, minSpeed, maxSpeed);
     }
 
     float CalculateSpeed()
