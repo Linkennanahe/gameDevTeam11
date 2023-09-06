@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
 
 public class AIChase2 : MonoBehaviour
 {
-    public GameObject player;
-    public float speed = 20f;
-    public float rotationSpeed = 100f;
+    public string playerTag = "Player"; // Tag of the player GameObject.
+    public float speed = 2f;
+    public float rotationSpeed = 70f;
     public float distanceBetween;
 
     private Transform enemyTransform;
@@ -19,7 +18,6 @@ public class AIChase2 : MonoBehaviour
     private void Start()
     {
         enemyTransform = transform;
-        playerTransform = player.transform;
         sqrDistanceBetween = distanceBetween * distanceBetween;
 
         rb = GetComponent<Rigidbody2D>(); // Initialize the Rigidbody2D reference
@@ -27,56 +25,58 @@ public class AIChase2 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //missile movement
-        Vector2 offset = (playerTransform.position - enemyTransform.position); //direction enemyTransform needs to face
-        Vector2 direction = offset.normalized; //normalized direction
-        rb.velocity = speed * Time.fixedDeltaTime * direction; //enemy velocity
-        float rotationSteer = Vector3.Cross(transform.up, direction).z; //Cross product of player and enemy vector
-        rb.angularVelocity = rotationSteer * rotationSpeed; //enemy rotation of Y-axis to face player
+        // Find the player GameObject using the tag.
+        GameObject[] players = GameObject.FindGameObjectsWithTag(playerTag);
 
-
-        //distance barrier between enemy and player
-        if(offset.sqrMagnitude < sqrDistanceBetween)
+        if (players.Length > 0)
         {
-            rb.constraints = RigidbodyConstraints2D.FreezePosition;
+            // Find the closest player to the enemy.
+            GameObject closestPlayer = FindClosestPlayer(players);
+            if (closestPlayer != null)
+            {
+                playerTransform = closestPlayer.transform;
+
+                // Missile movement
+                Vector2 offset = (playerTransform.position - enemyTransform.position); // Direction enemyTransform needs to face
+                Vector2 direction = offset.normalized; // Normalized direction
+                rb.velocity = speed * Time.fixedDeltaTime * direction; // Enemy velocity
+                float rotationSteer = Vector3.Cross(transform.up, direction).z; // Cross product of player and enemy vector
+                rb.angularVelocity = rotationSteer * rotationSpeed; // Enemy rotation of Y-axis to face player
+
+                // Distance barrier between enemy and player
+                if (offset.sqrMagnitude < sqrDistanceBetween)
+                {
+                    rb.constraints = RigidbodyConstraints2D.FreezePosition;
+                }
+                else
+                {
+                    rb.constraints = RigidbodyConstraints2D.None;
+                }
+            }
         }
         else
         {
-            rb.constraints = RigidbodyConstraints2D.None;
+            // No players with the specified tag found.
+            // You might want to add some behavior or handling here.
         }
-        
-
-        //float sqrDistance = direction.sqrMagnitude;
-
-        /* if (sqrDistance < sqrDistanceBetween)
-         {
-             direction.Normalize();
-             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-             // Move enemy based on the forward vector
-             rb.MovePosition(rb.position * (Vector2)enemyTransform.up * speed * Time.deltaTime * -1);
-
-             *//*if (direction != Vector2.zero)
-             {
-                 RotateTowards(playerTransform.position, 10f); // Rotate towards the player with a specified rotation speed
-             }*//*
-
-
-         }*/
-
     }
 
-
-
-
-
-    // Rotate the enemy towards a target
-    /*void RotateTowards(Vector3 targetPosition, float rotationSpeed)
+    // Find the closest player from an array of players.
+    private GameObject FindClosestPlayer(GameObject[] players)
     {
-        Vector2 direction = targetPosition - enemyTransform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Quaternion targetRotation = Quaternion.Euler(Vector3.forward * angle);
-        enemyTransform.rotation = Quaternion.RotateTowards(enemyTransform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-    }*/
+        GameObject closestPlayer = null;
+        float closestDistance = float.MaxValue;
+
+        foreach (var player in players)
+        {
+            float distance = Vector2.Distance(transform.position, player.transform.position);
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+                closestPlayer = player;
+            }
+        }
+
+        return closestPlayer;
+    }
 }
-    
