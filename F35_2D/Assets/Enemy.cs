@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private int hitCount = 0; // Number of hits the enemy has taken.
+    public int maxHealth = 3; // Maximum health of the enemy.
+
+    public int playerWeaponDamage = 1; // Damage taken from player weapons.
+    public int enemyCollisionDamage = 3; // Damage taken when colliding with another enemy.
+    public int playerCollisionDamage = 3; // Damage taken when colliding with the player.
+    public int enemyBulletDamage = 1; // Damage taken from enemy bullets.
+
+    private int currentHealth; // Current health of the enemy.
     private Animator animator; // Reference to the Animator component.
     private Collider2D enemyCollider; // Reference to the Collider2D component.
     private Rigidbody2D rb; // Reference to the Rigidbody2D component.
@@ -15,6 +22,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        currentHealth = maxHealth; // Initialize the current health to the maximum health.
         animator = GetComponent<Animator>(); // Get the Animator component.
         enemyCollider = GetComponent<Collider2D>(); // Get the Collider2D component.
         rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component.
@@ -29,14 +37,44 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player Weapon")) // Assuming bullets are tagged as "Player Weapon."
         {
-            // Increment the hit count.
-            hitCount++;
+            // Decrement the current health by playerWeaponDamage.
+            currentHealth -= playerWeaponDamage;
 
-            // Perform any additional actions or effects on collision if needed.
-            // For example, you can play an explosion animation or sound.
+            // Check if the current health has reached zero, and if so, trigger the death animation.
+            if (currentHealth <= 0)
+            {
+                Death();
+            }
+        }
+        else if (collision.gameObject.CompareTag("Enemy"))
+        {
+            // Decrement the current health by enemyCollisionDamage.
+            currentHealth -= enemyCollisionDamage;
 
-            // Check if the hit count has reached three, and if so, trigger the death animation.
-            if (hitCount >= 3)
+            // Check if the current health has reached zero, and if so, trigger the death animation.
+            if (currentHealth <= 0)
+            {
+                Death();
+            }
+        }
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            // Decrement the current health by playerCollisionDamage.
+            currentHealth -= playerCollisionDamage;
+
+            // Check if the current health has reached zero, and if so, trigger the death animation.
+            if (currentHealth <= 0)
+            {
+                Death();
+            }
+        }
+        else if (collision.gameObject.CompareTag("Enemy Weapon"))
+        {
+            // Decrement the current health by enemyBulletDamage.
+            currentHealth -= enemyBulletDamage;
+
+            // Check if the current health has reached zero, and if so, trigger the death animation.
+            if (currentHealth <= 0)
             {
                 Death();
             }
@@ -77,8 +115,9 @@ public class Enemy : MonoBehaviour
         {
             audioSource.Play();
         }
+        
 
-        // Delay the actual destruction to allow the death animation to play.
+        // Delay the actual destruction to allow the death animation to finish playing.
         StartCoroutine(DestroyAfterAnimation());
     }
 

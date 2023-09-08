@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
+    AudioSource audioSource; // Reference to the AudioSource component for engine sound.
 
     public float normalSpeed;
     public float boost;
@@ -31,6 +32,8 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>(); // Get the AudioSource component.
+
         currentSpeed = normalSpeed;
     }
 

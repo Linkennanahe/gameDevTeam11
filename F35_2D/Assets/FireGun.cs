@@ -24,16 +24,21 @@ public class FireGun : MonoBehaviour
 
     void FireBullet()
     {
-        GameObject bullet = Instantiate(BulletPrefab, Gun.position, Gun.rotation);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(Gun.up * bulletForce, ForceMode2D.Impulse);
+    GameObject bullet = Instantiate(BulletPrefab, Gun.position, Gun.rotation);
+    Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+    rb.AddForce(Gun.up * bulletForce, ForceMode2D.Impulse);
 
-        // Add an AudioSource component to the bullet GameObject and play the sound
-        AudioSource bulletAudioSource = bullet.AddComponent<AudioSource>();
-        bulletAudioSource.clip = bulletSound;
-        bulletAudioSource.Play();
+    // Add an AudioSource component to the bullet GameObject and play the sound
+    AudioSource bulletAudioSource = bullet.AddComponent<AudioSource>();
+    bulletAudioSource.clip = bulletSound;
 
-        // Destroy the AudioSource component after the sound finishes playing
-        Destroy(bulletAudioSource, bulletSound.length);
+    // Adjust the loudness (volume) of the sound (0.0f to 1.0f)
+    bulletAudioSource.volume = 0.1f; 
+
+    bulletAudioSource.Play();
+
+    // Destroy the AudioSource component after the sound finishes playing
+    Destroy(bulletAudioSource, bulletSound.length);
     }
+
 }

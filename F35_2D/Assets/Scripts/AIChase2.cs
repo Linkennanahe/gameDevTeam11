@@ -8,12 +8,13 @@ public class AIChase2 : MonoBehaviour
     public float speed = 2f;
     public float rotationSpeed = 70f;
     public float distanceBetween;
+    public float stoppingDistance = 1.5f; // The distance at which the AI will stop moving.
 
     private Transform enemyTransform;
     private Transform playerTransform;
     private float sqrDistanceBetween;
 
-    private Rigidbody2D rb; // Add a reference to the Rigidbody2D component
+    private Rigidbody2D rb; // Reference to the Rigidbody2D component
 
     private void Start()
     {
@@ -36,21 +37,36 @@ public class AIChase2 : MonoBehaviour
             {
                 playerTransform = closestPlayer.transform;
 
-                // Missile movement
-                Vector2 offset = (playerTransform.position - enemyTransform.position); // Direction enemyTransform needs to face
-                Vector2 direction = offset.normalized; // Normalized direction
-                rb.velocity = speed * Time.fixedDeltaTime * direction; // Enemy velocity
-                float rotationSteer = Vector3.Cross(transform.up, direction).z; // Cross product of player and enemy vector
-                rb.angularVelocity = rotationSteer * rotationSpeed; // Enemy rotation of Y-axis to face player
+                // Calculate the direction to the player.
+                Vector2 directionToPlayer = playerTransform.position - enemyTransform.position;
+                directionToPlayer.Normalize();
 
-                // Distance barrier between enemy and player
-                if (offset.sqrMagnitude < sqrDistanceBetween)
+                // Calculate the angle between the AI's forward direction (transform.up) and the direction to the player.
+                float angle = Vector3.Angle(transform.up, directionToPlayer);
+
+                // Rotate the AI to face the player.
+                float rotationSteer = Vector3.Cross(transform.up, directionToPlayer).z;
+                rb.angularVelocity = rotationSteer * rotationSpeed;
+                rb.AddForce(transform.up * speed, ForceMode2D.Force);
+
+                // If the AI is facing the player, move towards the player.
+                if (angle < 20f)
                 {
-                    rb.constraints = RigidbodyConstraints2D.FreezePosition;
+                    // Distance barrier between enemy and player
+                    if (directionToPlayer.sqrMagnitude < sqrDistanceBetween)
+                    {
+                        rb.velocity = Vector2.zero; // Stop movement.
+                    }
+
+                    // If the AI is close enough to the player, stop moving.
+                    if (directionToPlayer.magnitude < stoppingDistance)
+                    {
+                        rb.velocity = Vector2.zero; // Stop movement.
+                    }
                 }
                 else
                 {
-                    rb.constraints = RigidbodyConstraints2D.None;
+                    rb.velocity = Vector2.zero; // Stop movement if not facing the player.
                 }
             }
         }

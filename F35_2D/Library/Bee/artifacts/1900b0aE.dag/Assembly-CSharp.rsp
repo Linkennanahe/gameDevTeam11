@@ -388,6 +388,7 @@
 "Assets/EnemyBullet.cs"
 "Assets/EnemySpawner.cs"
 "Assets/FireGun.cs"
+"Assets/Player.cs"
 "Assets/Scripts/AIChase2.cs"
 "Assets/Scripts/PlayerController.cs"
 -langversion:9.0

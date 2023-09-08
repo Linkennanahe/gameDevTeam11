@@ -235,10 +235,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea6dce42776f1f4c982e023ff0d3c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1098151984750358885}
+  playerTag: Player
   speed: 50
   rotationSpeed: 70
   distanceBetween: 0
+  stoppingDistance: 1.5
 --- !u!114 &1625719482738527901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,7 +255,8 @@ MonoBehaviour:
   EnemyBulletPrefab: {fileID: 7453826415357223958, guid: 4bb7459dbbee8ac45a753fac99241147, type: 3}
   bulletSpawnPoint: {fileID: 6844872146574408317}
   bulletForce: 10
-  fireRate: 1
+  fireRate: 3
+  firingDistance: 5
 --- !u!82 &1041358878
 AudioSource:
   m_ObjectHideFlags: 0
@@ -384,6 +386,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ec9f7654f645ce4b8451d47666194bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  playerWeaponDamage: 3
+  enemyCollisionDamage: 10
+  playerCollisionDamage: 10
+  enemyBulletDamage: 1
   deathSound: {fileID: 8300000, guid: 2041e9aae109622419b3f6f29b6fc1fa, type: 3}
 --- !u!1 &8507398956813305148
 GameObject:
@@ -409,7 +416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8507398956813305148}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
