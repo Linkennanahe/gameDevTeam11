@@ -324,7 +324,11 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
+<<<<<<< Updated upstream
 -r:"C:/Users/James/Unity Projects/gameDevTeam11/F35_2D/Library/PackageCache/com.unity.burst@1.8.2/Unity.Burst.Unsafe.dll"
+=======
+-r:"F:/GitHub/gameDevTeam11/F35_2D/Library/PackageCache/com.unity.burst@1.8.2/Unity.Burst.Unsafe.dll"
+>>>>>>> Stashed changes
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Library/PackageCache/com.unity.burst@1.8.2/Runtime/BurstCompileAttribute.cs"
