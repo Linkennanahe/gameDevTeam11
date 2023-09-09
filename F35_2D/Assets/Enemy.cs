@@ -20,6 +20,8 @@ public class Enemy : MonoBehaviour
 
     public AudioClip deathSound; // Assign the death sound in the Inspector.
 
+    [SerializeField] FloatingHealthBar healthBar;
+
     private void Start()
     {
         currentHealth = maxHealth; // Initialize the current health to the maximum health.
@@ -28,9 +30,12 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component.
         aiWeaponSystem = GetComponent<AIWeaponSystem>(); // Get the AI weapon system script.
         audioSource = GetComponent<AudioSource>(); // Get the AudioSource component.
+        healthBar = GetComponentInChildren<FloatingHealthBar>(); // Get the healthbar UI slider script. 
 
         // Set the death sound for the AudioSource component.
         audioSource.clip = deathSound;
+
+        healthBar.UpdateHealthBar(currentHealth, maxHealth); // Update Healthbar upon start
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -39,6 +44,9 @@ public class Enemy : MonoBehaviour
         {
             // Decrement the current health by playerWeaponDamage.
             currentHealth -= playerWeaponDamage;
+
+            // Update Healthbar upon collision
+            healthBar.UpdateHealthBar(currentHealth, maxHealth);
 
             // Check if the current health has reached zero, and if so, trigger the death animation.
             if (currentHealth <= 0)
