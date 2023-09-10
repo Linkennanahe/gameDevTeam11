@@ -4,29 +4,48 @@ using UnityEngine;
 
 public class AIChase2 : MonoBehaviour
 {
-    public string playerTag = "Player"; // Tag of the player GameObject.
-    public float speed = 2f;
-    public float rotationSpeed = 70f;
-    public float distanceBetween;
-    public float stoppingDistance = 1.5f; // The distance at which the AI will stop moving.
+    // Tag of the player GameObject.
+    public string playerTag = "Player";
 
+    // Speed at which the AI moves.
+    public float speed = 2f;
+
+    // Speed at which the AI rotates.
+    public float rotationSpeed = 70f;
+
+    // Minimum distance between the AI and the player.
+    public float distanceBetween;
+
+    // The distance at which the AI will stop moving.
+    public float stoppingDistance = 1.5f;
+
+    // Reference to the AI's transform.
     private Transform enemyTransform;
+
+    // Reference to the player's transform.
     private Transform playerTransform;
+
+    // The square of the distance between AI and player.
     private float sqrDistanceBetween;
 
-    private Rigidbody2D rb; // Reference to the Rigidbody2D component
+    // Reference to the Rigidbody2D component.
+    private Rigidbody2D rb;
 
     private void Start()
     {
+        // Get a reference to the AI's transform.
         enemyTransform = transform;
+
+        // Calculate the square of the distance between.
         sqrDistanceBetween = distanceBetween * distanceBetween;
 
-        rb = GetComponent<Rigidbody2D>(); // Initialize the Rigidbody2D reference
+        // Initialize the Rigidbody2D reference.
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void FixedUpdate()
     {
-        // Find the player GameObject using the tag.
+        // Find all GameObjects with the specified tag.
         GameObject[] players = GameObject.FindGameObjectsWithTag(playerTag);
 
         if (players.Length > 0)
@@ -35,6 +54,7 @@ public class AIChase2 : MonoBehaviour
             GameObject closestPlayer = FindClosestPlayer(players);
             if (closestPlayer != null)
             {
+                // Get the player's transform.
                 playerTransform = closestPlayer.transform;
 
                 // Calculate the direction to the player.
@@ -47,33 +67,33 @@ public class AIChase2 : MonoBehaviour
                 // Rotate the AI to face the player.
                 float rotationSteer = Vector3.Cross(transform.up, directionToPlayer).z;
                 rb.angularVelocity = rotationSteer * rotationSpeed;
+                
+                // Move the AI.
                 rb.AddForce(transform.up * speed, ForceMode2D.Force);
 
                 // If the AI is facing the player, move towards the player.
                 if (angle < 20f)
                 {
-                    // Distance barrier between enemy and player
+                    // Distance barrier between enemy and player.
                     if (directionToPlayer.sqrMagnitude < sqrDistanceBetween)
                     {
-                        rb.velocity = Vector2.zero; // Stop movement.
+                        // Stop movement.
+                        rb.velocity = Vector2.zero;
                     }
 
                     // If the AI is close enough to the player, stop moving.
                     if (directionToPlayer.magnitude < stoppingDistance)
                     {
-                        rb.velocity = Vector2.zero; // Stop movement.
+                        // Stop movement.
+                        rb.velocity = Vector2.zero;
                     }
                 }
                 else
                 {
-                    rb.velocity = Vector2.zero; // Stop movement if not facing the player.
+                    // Stop movement if not facing the player.
+                    rb.velocity = Vector2.zero;
                 }
             }
-        }
-        else
-        {
-            // No players with the specified tag found.
-            // You might want to add some behavior or handling here.
         }
     }
 

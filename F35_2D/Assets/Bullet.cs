@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float bulletLifetime = 2.0f; // Adjust this value to control how long the bullet exists.
-    private AudioSource bulletAudioSource; // Reference to the AudioSource component.
-    private Renderer bulletRenderer; // Reference to the Renderer component.
+    // Adjust this value to control how long the bullet exists.
+    public float bulletLifetime = 2.0f;
 
-    private bool hasCollided = false; // To ensure we handle the collision only once.
+    // Reference to the AudioSource component.
+    private AudioSource bulletAudioSource;
+
+    // Reference to the Renderer component.
+    private Renderer bulletRenderer;
+
+    // To ensure we handle the collision only once.
+    private bool hasCollided = false;
 
     private void Start()
     {
