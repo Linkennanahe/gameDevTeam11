@@ -4,88 +4,123 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int maxHealth = 3; // Maximum health of the enemy.
+    // Maximum health of the enemy.
+    public int maxHealth = 10;
 
-    public int playerWeaponDamage = 1; // Damage taken from player weapons.
-    public int enemyCollisionDamage = 3; // Damage taken when colliding with another enemy.
-    public int playerCollisionDamage = 3; // Damage taken when colliding with the player.
-    public int enemyBulletDamage = 1; // Damage taken from enemy bullets.
+    // Damage taken from player weapons.
+    public int playerWeaponDamage = 1;
 
-    private int currentHealth; // Current health of the enemy.
-    private Animator animator; // Reference to the Animator component.
-    private Collider2D enemyCollider; // Reference to the Collider2D component.
-    private Rigidbody2D rb; // Reference to the Rigidbody2D component.
-    private AIWeaponSystem aiWeaponSystem; // Reference to the AI weapon system script.
-    private AudioSource audioSource; // Reference to the AudioSource component for death sound.
+    // Damage taken when colliding with another enemy.
+    public int enemyCollisionDamage = 3;
 
-    public AudioClip deathSound; // Assign the death sound in the Inspector.
+    // Damage taken when colliding with the player.
+    public int playerCollisionDamage = 3;
+
+    // Damage taken from enemy bullets.
+    public int enemyBulletDamage = 1;
+
+    // Damage taken from missiles.
+    public int missileDamage = 10;
+
+    // Current health of the enemy.
+    private int currentHealth;
+
+    // Reference to the Animator component.
+    private Animator animator;
+
+    // Reference to the Collider2D component.
+    private Collider2D enemyCollider;
+
+    // Reference to the Rigidbody2D component.
+    private Rigidbody2D rb;
+
+    // Reference to the AI weapon system script.
+    private AIWeaponSystem aiWeaponSystem;
+
+    // Reference to the AudioSource component for death sound.
+    private AudioSource audioSource;
+
+    // Assign the death sound in the Inspector.
+    public AudioClip deathSound;
+
+    // Reference to the player's FireGun script.
+    private FireGun playerFireGun;
 
     private void Start()
     {
-        currentHealth = maxHealth; // Initialize the current health to the maximum health.
-        animator = GetComponent<Animator>(); // Get the Animator component.
-        enemyCollider = GetComponent<Collider2D>(); // Get the Collider2D component.
-        rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component.
-        aiWeaponSystem = GetComponent<AIWeaponSystem>(); // Get the AI weapon system script.
-        audioSource = GetComponent<AudioSource>(); // Get the AudioSource component.
+        // Initialize the current health to the maximum health.
+        currentHealth = maxHealth;
+
+        // Get the Animator component.
+        animator = GetComponent<Animator>();
+
+        // Get the Collider2D component.
+        enemyCollider = GetComponent<Collider2D>();
+
+        // Get the Rigidbody2D component.
+        rb = GetComponent<Rigidbody2D>();
+
+        // Get the AI weapon system script.
+        aiWeaponSystem = GetComponent<AIWeaponSystem>();
+
+        // Get the AudioSource component.
+        audioSource = GetComponent<AudioSource>();
 
         // Set the death sound for the AudioSource component.
         audioSource.clip = deathSound;
+
+        // Find the player GameObject with the "Player" tag.
+        GameObject playerGameObject = GameObject.FindGameObjectWithTag("Player");
+
+        // If the player GameObject is found, get the FireGun script attached to it.
+        if (playerGameObject != null)
+        {
+            playerFireGun = playerGameObject.GetComponent<FireGun>();
+        }
+        else
+        {
+            Debug.LogWarning("Player GameObject not found.");
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player Weapon")) // Assuming bullets are tagged as "Player Weapon."
+        // Check the collision tag and apply damage accordingly.
+        if (collision.gameObject.CompareTag("Player Weapon"))
         {
             // Decrement the current health by playerWeaponDamage.
             currentHealth -= playerWeaponDamage;
-
-            // Check if the current health has reached zero, and if so, trigger the death animation.
-            if (currentHealth <= 0)
-            {
-                Death();
-            }
+        }
+        else if (collision.gameObject.CompareTag("Player Missile"))
+        {
+            // Decrement the current health by missileDamage.
+            currentHealth -= missileDamage;
         }
         else if (collision.gameObject.CompareTag("Enemy"))
         {
             // Decrement the current health by enemyCollisionDamage.
             currentHealth -= enemyCollisionDamage;
-
-            // Check if the current health has reached zero, and if so, trigger the death animation.
-            if (currentHealth <= 0)
-            {
-                Death();
-            }
         }
         else if (collision.gameObject.CompareTag("Player"))
         {
             // Decrement the current health by playerCollisionDamage.
             currentHealth -= playerCollisionDamage;
-
-            // Check if the current health has reached zero, and if so, trigger the death animation.
-            if (currentHealth <= 0)
-            {
-                Death();
-            }
         }
         else if (collision.gameObject.CompareTag("Enemy Weapon"))
         {
             // Decrement the current health by enemyBulletDamage.
             currentHealth -= enemyBulletDamage;
+        }
 
-            // Check if the current health has reached zero, and if so, trigger the death animation.
-            if (currentHealth <= 0)
-            {
-                Death();
-            }
+        // Check if the enemy deplete their health, if yes, trigger the death animation.
+        if (currentHealth <= 0)
+        {
+            Death();
         }
     }
 
     private void Death()
     {
-        // Perform any additional actions or effects before triggering the death animation.
-        // For example, you can play an explosion animation or sound.
-
         // Trigger the death animation if an Animator is attached.
         if (animator != null)
         {
@@ -115,7 +150,12 @@ public class Enemy : MonoBehaviour
         {
             audioSource.Play();
         }
-        
+
+        // Calls the AddAmmo function in FireGun script.
+        if (playerFireGun != null)
+        {
+            playerFireGun.AddAmmo();
+        }
 
         // Delay the actual destruction to allow the death animation to finish playing.
         StartCoroutine(DestroyAfterAnimation());

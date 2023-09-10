@@ -8,6 +8,7 @@ TagManager:
   - Player Weapon
   - Enemy Weapon
   - Obstacle
+  - Player Missile
   layers:
   - Default
   - TransparentFX

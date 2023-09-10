@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4546534151512625798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 3.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -113,7 +113,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1448452155, guid: 2b613f852f5ea2f46948fce6af944829, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -341,11 +341,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gun: {fileID: 6097228350640045399}
   BulletPrefab: {fileID: 7453826415357223958, guid: 6931c3a83c31f644aa13a2287a77bdfb, type: 3}
+  MissilePrefab: {fileID: 7265649071556546117, guid: 474d4a849b6ad2e468b5bd3076e75261, type: 3}
   bulletForce: 10
-  fireRate: 0.1
+  missileForce: 10
+  bulletFireRate: 0.1
+  missileFireRate: 2
   bulletSound: {fileID: 8300000, guid: 7496ee5ed53bc8f40b637ede888129a0, type: 3}
-  ammoCount: 500
-  ammoText: {fileID: 0}
+  missileSound: {fileID: 8300000, guid: 167de89cd3a836b408a9293e4289b9a2, type: 3}
+  weapons:
+  - {fileID: 6097228350640045399}
+  - {fileID: 6097228350640045399}
+  maxBulletAmmo: 100
+  maxMissileAmmo: 20
 --- !u!82 &818456070226341809
 AudioSource:
   m_ObjectHideFlags: 0

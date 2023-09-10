@@ -388,6 +388,8 @@
 "Assets/EnemyBullet.cs"
 "Assets/EnemySpawner.cs"
 "Assets/FireGun.cs"
+"Assets/HomingMissile.cs"
+"Assets/Missile.cs"
 "Assets/Player.cs"
 "Assets/Scripts/AIChase2.cs"
 "Assets/Scripts/PlayerController.cs"
