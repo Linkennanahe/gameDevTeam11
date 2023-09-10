@@ -351,8 +351,8 @@ MonoBehaviour:
   weapons:
   - {fileID: 6097228350640045399}
   - {fileID: 6097228350640045399}
-  maxBulletAmmo: 100
-  maxMissileAmmo: 20
+  maxBulletAmmo: 500
+  maxMissileAmmo: 10
 --- !u!82 &818456070226341809
 AudioSource:
   m_ObjectHideFlags: 0
