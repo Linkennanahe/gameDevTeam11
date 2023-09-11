@@ -46,6 +46,9 @@ public class Enemy : MonoBehaviour
     // Reference to the player's FireGun script.
     private FireGun playerFireGun;
 
+    // Reference to the enemy Health Bar component
+    [SerializeField] FloatingHealthBar healthBar;
+
     private void Start()
     {
         // Initialize the current health to the maximum health.
@@ -81,6 +84,12 @@ public class Enemy : MonoBehaviour
         {
             Debug.LogWarning("Player GameObject not found.");
         }
+
+        // Get the healthbar UI slider script. 
+        healthBar = GetComponentInChildren<FloatingHealthBar>(); 
+
+        // Update Healthbar upon start
+        healthBar.UpdateHealthBar(currentHealth, maxHealth); 
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -90,6 +99,8 @@ public class Enemy : MonoBehaviour
         {
             // Decrement the current health by playerWeaponDamage.
             currentHealth -= playerWeaponDamage;
+
+            
         }
         else if (collision.gameObject.CompareTag("Player Missile"))
         {
@@ -112,11 +123,16 @@ public class Enemy : MonoBehaviour
             currentHealth -= enemyBulletDamage;
         }
 
+        // Update Healthbar upon collision
+        healthBar.UpdateHealthBar(currentHealth, maxHealth);
+
         // Check if the enemy deplete their health, if yes, trigger the death animation.
         if (currentHealth <= 0)
         {
             Death();
         }
+
+        
     }
 
     private void Death()

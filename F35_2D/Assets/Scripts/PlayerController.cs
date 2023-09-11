@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
-    AudioSource audioSource; // Reference to the AudioSource component for engine sound.
+    public AudioSource audioSource; // Reference to the AudioSource component for engine sound.
 
     public float normalSpeed;
     public float boost;
@@ -20,6 +20,9 @@ public class PlayerController : MonoBehaviour
     public float maxSpeed = 5f;
     public float minSpeed = 1f;
 
+    // Max audio pitch
+    [SerializeField] private float maxPitch = 2.0f;
+
     // Acceleration and deceleration rates
     public float accelerationRate = 2f;
     public float decelerationRate = 4f;
@@ -27,14 +30,23 @@ public class PlayerController : MonoBehaviour
     // Current speed
     private float currentSpeed;
 
+    // Default pitch
+    private float normalPitch;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
-        audioSource = GetComponent<AudioSource>(); // Get the AudioSource component.
+        //audioSource = GetComponent<AudioSource>(); // Get the AudioSource component.
+
+        if (transform)
+        {
+            audioSource.Play(); // Play engine sound
+        }
 
         currentSpeed = normalSpeed;
+        normalPitch = audioSource.pitch;
     }
 
     void FixedUpdate()
@@ -69,6 +81,28 @@ public class PlayerController : MonoBehaviour
 
         // Clamp the current speed to stay within the desired bounds
         currentSpeed = Mathf.Clamp(currentSpeed, minSpeed, maxSpeed);
+
+        // Calculate pitch based on acceleration
+        float targetPitch = CalculatePitch();
+        float currentPitch = audioSource.pitch;
+
+        // Gradually adjust the current pitch towards the target pitch
+        currentPitch = Mathf.Lerp(currentPitch, targetPitch, Time.deltaTime * (movement == Vector2.zero ? decelerationRate : accelerationRate));
+
+        // Clamp the current pitch to stay within the desired bounds
+        currentPitch = Mathf.Clamp(currentPitch, normalPitch, maxPitch);
+
+        //change pitch
+        audioSource.pitch = currentPitch;
+
+        if (transform)
+        {
+            audioSource.loop = true; // Loop engine sound
+        }
+        else
+        {
+            audioSource.Pause();
+        }
     }
 
     float CalculateSpeed()
@@ -85,6 +119,23 @@ public class PlayerController : MonoBehaviour
         }
 
         return speed;
+    }
+
+    float CalculatePitch()
+    {
+        float pitch = audioSource.pitch;
+
+        if (movement.y > 0)
+        {
+            pitch *= boost / maxPitch;
+        }
+        else
+        {
+            pitch = normalPitch;
+        }
+
+
+        return pitch;
     }
 
     void Rotate(float rotationAmount)
