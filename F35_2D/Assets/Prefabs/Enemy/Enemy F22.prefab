@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTag: Player
-  speed: 90
+  speed: 900
   rotationSpeed: 90
   distanceBetween: 0
   stoppingDistance: 1.5
@@ -140,8 +140,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 12
   playerWeaponDamage: 3
-  enemyCollisionDamage: 10
-  playerCollisionDamage: 10
+  enemyCollisionDamage: 15
+  playerCollisionDamage: 15
   enemyBulletDamage: 1
   missileDamage: 20
   deathSound: {fileID: 8300000, guid: 2041e9aae109622419b3f6f29b6fc1fa, type: 3}
@@ -253,7 +253,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
