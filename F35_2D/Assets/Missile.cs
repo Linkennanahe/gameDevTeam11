@@ -19,6 +19,9 @@ public class Missile : MonoBehaviour
     // Make sure only handle the collision once.
     private bool hasCollided = false;
 
+    // Explosion sound
+    public AudioClip explosionSound;
+
     private void Start()
     {
         // Automatically destroy the missile after a certain time to prevent memory leaks.
@@ -36,46 +39,48 @@ public class Missile : MonoBehaviour
         // Check if the missile collides with an object that should cause destruction.
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            // Make sure only handle the collision once.
-            if (!hasCollided)
-            {
-                hasCollided = true;
-
-                // Disable the missile's renderer to make it invisible.
-                missileRenderer.enabled = false;
-
-                // Stop playing the audio source.
-                if (missileAudioSource != null)
-                {
-                    missileAudioSource.Stop();
-                }
-
-                // Destroy the missile GameObject on collision.
-                Destroy(gameObject);
-            }
+            HandleCollision();
         }
         else if (collision.gameObject.CompareTag("Enemy Weapon"))
         {
-            // Make sure only handle the collision once.
-            if (!hasCollided)
-            {
-                hasCollided = true;
-
-                // Perform any actions or effects for colliding with obstacles.
-                // For example, you could add an explosion effect or damage the obstacle.
-
-                // Disable the missile's renderer to make it invisible.
-                missileRenderer.enabled = false;
-
-                // Stop playing the audio source.
-                if (missileAudioSource != null)
-                {
-                    missileAudioSource.Stop();
-                }
-
-                // Destroy the missile GameObject on collision.
-                Destroy(gameObject);
-            }
+            HandleCollision();
         }
+    }
+
+    private void HandleCollision()
+    {
+        // Make sure only handle the collision once.
+        if (!hasCollided)
+        {
+            hasCollided = true;
+
+            // Disable the missile's renderer to make it invisible.
+            missileRenderer.enabled = false;
+
+            // Stop playing the audio source.
+            if (missileAudioSource != null)
+            {
+                missileAudioSource.Stop();
+            }
+
+            // Play the explosion sound if available.
+            if (explosionSound != null)
+            {
+                // Play the explosion sound at the missile's position.
+                AudioSource.PlayClipAtPoint(explosionSound, transform.position);
+            }
+
+            // Delay the destruction of the missile GameObject.
+            StartCoroutine(DestroyMissile());
+        }
+    }
+
+    private IEnumerator DestroyMissile()
+    {
+        // Wait for a short period of time to allow the explosion sound to play.
+        yield return new WaitForSeconds(0.2f); // Adjust the time as needed.
+
+        // Destroy the missile GameObject.
+        Destroy(gameObject);
     }
 }
