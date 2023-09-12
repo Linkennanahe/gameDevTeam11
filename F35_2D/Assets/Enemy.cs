@@ -46,6 +46,9 @@ public class Enemy : MonoBehaviour
     // Reference to the player's FireGun script.
     private FireGun playerFireGun;
 
+    // Reference to the enemy Health Bar component
+    [SerializeField] FloatingHealthBar healthBar;
+
     private void Start()
     {
         // Initialize the current health to the maximum health.
@@ -81,6 +84,12 @@ public class Enemy : MonoBehaviour
         {
             Debug.LogWarning("Player GameObject not found.");
         }
+
+        // Get the healthbar UI slider script. 
+        healthBar = GetComponentInChildren<FloatingHealthBar>(); 
+
+        // Update Healthbar upon start
+        healthBar.UpdateHealthBar(currentHealth, maxHealth); 
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -90,45 +99,39 @@ public class Enemy : MonoBehaviour
         {
             // Decrement the current health by playerWeaponDamage.
             currentHealth -= playerWeaponDamage;
-            ScorePoints.AddPointToTheScore();
-
         }
         else if (collision.gameObject.CompareTag("Player Missile"))
         {
             // Decrement the current health by missileDamage.
             currentHealth -= missileDamage;
-            ScorePoints.AddPointToTheScore();
-
         }
         else if (collision.gameObject.CompareTag("Enemy"))
         {
             // Decrement the current health by enemyCollisionDamage.
             currentHealth -= enemyCollisionDamage;
-            ScorePoints.AddPointToTheScore();
-
         }
         else if (collision.gameObject.CompareTag("Player"))
         {
             // Decrement the current health by playerCollisionDamage.
             currentHealth -= playerCollisionDamage;
-            ScorePoints.AddPointToTheScore();
-
         }
         else if (collision.gameObject.CompareTag("Enemy Weapon"))
         {
             // Decrement the current health by enemyBulletDamage.
             currentHealth -= enemyBulletDamage;
-            ScorePoints.AddPointToTheScore();
-
         }
 
-        // Check if the enemy deplete their health, if yes, trigger the death animation.
+        // Check if the enemy depletes their health, if yes, trigger the death animation.
         if (currentHealth <= 0)
         {
             Death();
-            ScorePoints.AddPointToTheScore();
-
         }
+
+        // Update Healthbar upon collision
+        healthBar.UpdateHealthBar(currentHealth, maxHealth);
+
+        // Call the AddPointToTheScore function to update the score.
+        ScorePoints.AddPointToTheScore();
     }
 
     private void Death()
