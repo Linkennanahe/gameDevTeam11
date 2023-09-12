@@ -386,6 +386,7 @@
 "Assets/Bullet.cs"
 "Assets/Enemy.cs"
 "Assets/EnemyBullet.cs"
+"Assets/EnemyShip.cs"
 "Assets/EnemySpawner.cs"
 "Assets/FireGun.cs"
 "Assets/HomingMissile.cs"
