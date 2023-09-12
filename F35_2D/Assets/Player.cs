@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class Player : MonoBehaviour
     private AudioSource audioSource; // Reference to the AudioSource component for death sound.
     public AudioClip deathSound; // Assign the death sound in the Inspector.
 
+
+    public Slider healthBar;
+    public Text healthCounterText;
+    public GameObject gameOver;
     private void Start()
     {
         currentHealth = maxHealth; // Initialize the current health to the maximum health.
@@ -21,6 +26,8 @@ public class Player : MonoBehaviour
 
         // Set the death sound for the AudioSource component.
         audioSource.clip = deathSound;
+        healthBar.value = currentHealth;
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -78,5 +85,31 @@ public class Player : MonoBehaviour
 
         // Destroy the enemy GameObject.
         Destroy(gameObject);
+        //GameOverUI
+        DestoryObjects("Enemy");
+        gameOver.GetComponent<ShowAndHide>().ShowTheObject();
+    }
+
+    private void Update()
+    {
+        HealthBarInfo();
+    }
+
+    private void DestoryObjects(string tag)
+    {
+        GameObject[] objectsCloned = GameObject.FindGameObjectsWithTag(tag);
+        foreach (GameObject obj in objectsCloned)
+        {
+            GameObject.Destroy(obj);
+
+        }
+    }
+
+    private void HealthBarInfo()
+    {
+        if (currentHealth < 0)
+            return;
+        healthBar.value = currentHealth / 10f;
+        healthCounterText.text = currentHealth.ToString();
     }
 }

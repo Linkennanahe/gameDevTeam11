@@ -90,32 +90,44 @@ public class Enemy : MonoBehaviour
         {
             // Decrement the current health by playerWeaponDamage.
             currentHealth -= playerWeaponDamage;
+            ScorePoints.AddPointToTheScore();
+
         }
         else if (collision.gameObject.CompareTag("Player Missile"))
         {
             // Decrement the current health by missileDamage.
             currentHealth -= missileDamage;
+            ScorePoints.AddPointToTheScore();
+
         }
         else if (collision.gameObject.CompareTag("Enemy"))
         {
             // Decrement the current health by enemyCollisionDamage.
             currentHealth -= enemyCollisionDamage;
+            ScorePoints.AddPointToTheScore();
+
         }
         else if (collision.gameObject.CompareTag("Player"))
         {
             // Decrement the current health by playerCollisionDamage.
             currentHealth -= playerCollisionDamage;
+            ScorePoints.AddPointToTheScore();
+
         }
         else if (collision.gameObject.CompareTag("Enemy Weapon"))
         {
             // Decrement the current health by enemyBulletDamage.
             currentHealth -= enemyBulletDamage;
+            ScorePoints.AddPointToTheScore();
+
         }
 
         // Check if the enemy deplete their health, if yes, trigger the death animation.
         if (currentHealth <= 0)
         {
             Death();
+            ScorePoints.AddPointToTheScore();
+
         }
     }
 
