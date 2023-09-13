@@ -2,7 +2,11 @@ m_ProjectFiles:
   m_ManifestFileStatus:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_FilePath: C:/Users/James/Unity Projects/gameDevTeam11/F35_2D/Packages/manifest.json
+=======
+    m_FilePath: F:/GitHub/gameDevTeam11/F35_2D/Packages/manifest.json
+>>>>>>> Stashed changes
 =======
     m_FilePath: F:/GitHub/gameDevTeam11/F35_2D/Packages/manifest.json
 >>>>>>> Stashed changes
@@ -13,6 +17,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
       ticks: 638283702247879727
@@ -31,13 +36,23 @@ m_ProjectFiles:
   m_LockFileStatus:
     m_FilePath: F:/GitHub/gameDevTeam11/F35_2D/Packages/packages-lock.json
 >>>>>>> Stashed changes
+=======
+      ticks: 638297722676496142
+    m_Hash: 3717540987
+  m_LockFileStatus:
+    m_FilePath: F:/GitHub/gameDevTeam11/F35_2D/Packages/packages-lock.json
+>>>>>>> Stashed changes
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       ticks: 638283702247889124
+=======
+      ticks: 638297722676501173
+>>>>>>> Stashed changes
 =======
       ticks: 638297722676501173
 >>>>>>> Stashed changes
@@ -51,7 +66,11 @@ m_LocalPackages:
   m_LocalFileStatus: []
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 m_ProjectPath: C:/Users/James/Unity Projects/gameDevTeam11/F35_2D/Packages
+=======
+m_ProjectPath: F:/GitHub/gameDevTeam11/F35_2D/Packages
+>>>>>>> Stashed changes
 =======
 m_ProjectPath: F:/GitHub/gameDevTeam11/F35_2D/Packages
 >>>>>>> Stashed changes
@@ -67,7 +86,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.cinemachine@2.8.9
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.cinemachine@2.8.9
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.cinemachine@2.8.9
 >>>>>>> Stashed changes
@@ -235,7 +258,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.collab-proxy@2.0.3
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.collab-proxy@2.0.3
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.collab-proxy@2.0.3
 >>>>>>> Stashed changes
@@ -382,7 +409,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.feature.2d@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.feature.2d@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.feature.2d@1.0.0
 >>>>>>> Stashed changes
@@ -496,7 +527,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.ide.rider@3.0.18
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.ide.rider@3.0.18
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.ide.rider@3.0.18
 >>>>>>> Stashed changes
@@ -599,7 +634,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.ide.visualstudio@2.0.17
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.ide.visualstudio@2.0.17
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.ide.visualstudio@2.0.17
 >>>>>>> Stashed changes
@@ -690,7 +729,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.ide.vscode@1.2.5
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.ide.vscode@1.2.5
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.ide.vscode@1.2.5
 >>>>>>> Stashed changes
@@ -760,7 +803,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.inputsystem@1.5.1
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.inputsystem@1.5.1
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.inputsystem@1.5.1
 >>>>>>> Stashed changes
@@ -880,7 +927,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.render-pipelines.universal@12.1.11
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.render-pipelines.universal@12.1.11
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.render-pipelines.universal@12.1.11
 >>>>>>> Stashed changes
@@ -1018,7 +1069,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.test-framework@1.1.31
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.test-framework@1.1.31
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.test-framework@1.1.31
 >>>>>>> Stashed changes
@@ -1148,7 +1203,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.textmeshpro@3.0.6
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.textmeshpro@3.0.6
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.textmeshpro@3.0.6
 >>>>>>> Stashed changes
@@ -1327,7 +1386,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.timeline@1.6.4
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.timeline@1.6.4
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.timeline@1.6.4
 >>>>>>> Stashed changes
@@ -1500,7 +1563,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.ugui@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.ugui@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.ugui@1.0.0
 >>>>>>> Stashed changes
@@ -1573,7 +1640,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.visualscripting@1.8.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.visualscripting@1.8.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.visualscripting@1.8.0
 >>>>>>> Stashed changes
@@ -1672,7 +1743,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.ai@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.ai@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.ai@1.0.0
 >>>>>>> Stashed changes
@@ -1729,7 +1804,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.androidjni@1.0.0
 >>>>>>> Stashed changes
@@ -1785,7 +1864,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.animation@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.animation@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.animation@1.0.0
 >>>>>>> Stashed changes
@@ -1842,7 +1925,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
 >>>>>>> Stashed changes
@@ -1899,7 +1986,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.audio@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.audio@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.audio@1.0.0
 >>>>>>> Stashed changes
@@ -1956,7 +2047,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.cloth@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.cloth@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.cloth@1.0.0
 >>>>>>> Stashed changes
@@ -2017,7 +2112,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.director@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.director@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.director@1.0.0
 >>>>>>> Stashed changes
@@ -2082,7 +2181,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
 >>>>>>> Stashed changes
@@ -2140,7 +2243,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.imgui@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.imgui@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.imgui@1.0.0
 >>>>>>> Stashed changes
@@ -2197,7 +2304,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
 >>>>>>> Stashed changes
@@ -2254,7 +2365,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
 >>>>>>> Stashed changes
@@ -2311,7 +2426,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.physics@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.physics@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.physics@1.0.0
 >>>>>>> Stashed changes
@@ -2368,7 +2487,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.physics2d@1.0.0
 >>>>>>> Stashed changes
@@ -2425,7 +2548,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.screencapture@1.0.0
 >>>>>>> Stashed changes
@@ -2486,7 +2613,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.terrain@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.terrain@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.terrain@1.0.0
 >>>>>>> Stashed changes
@@ -2543,7 +2674,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
 >>>>>>> Stashed changes
@@ -2608,7 +2743,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.tilemap@1.0.0
 >>>>>>> Stashed changes
@@ -2668,7 +2807,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.ui@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.ui@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.ui@1.0.0
 >>>>>>> Stashed changes
@@ -2725,7 +2868,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.uielements@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.uielements@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.uielements@1.0.0
 >>>>>>> Stashed changes
@@ -2798,7 +2945,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.umbra@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.umbra@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.umbra@1.0.0
 >>>>>>> Stashed changes
@@ -2855,7 +3006,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
 >>>>>>> Stashed changes
@@ -2920,7 +3075,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
 >>>>>>> Stashed changes
@@ -2977,7 +3136,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
 >>>>>>> Stashed changes
@@ -3042,7 +3205,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
 >>>>>>> Stashed changes
@@ -3107,7 +3274,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
 >>>>>>> Stashed changes
@@ -3172,7 +3343,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
 >>>>>>> Stashed changes
@@ -3253,7 +3428,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.vehicles@1.0.0
 >>>>>>> Stashed changes
@@ -3314,7 +3493,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.video@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.video@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.video@1.0.0
 >>>>>>> Stashed changes
@@ -3383,7 +3566,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.vr@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.vr@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.vr@1.0.0
 >>>>>>> Stashed changes
@@ -3454,7 +3641,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.wind@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.wind@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.wind@1.0.0
 >>>>>>> Stashed changes
@@ -3511,7 +3702,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.xr@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.xr@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.xr@1.0.0
 >>>>>>> Stashed changes
@@ -3580,7 +3775,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.subsystems@1.0.0
 >>>>>>> Stashed changes
@@ -3641,7 +3840,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
 >>>>>>> Stashed changes
@@ -3709,7 +3912,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.ext.nunit@1.0.6
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.ext.nunit@1.0.6
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.ext.nunit@1.0.6
 >>>>>>> Stashed changes
@@ -3782,7 +3989,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.mathematics@1.2.6
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.mathematics@1.2.6
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.mathematics@1.2.6
 >>>>>>> Stashed changes
@@ -3858,7 +4069,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.burst@1.8.2
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.burst@1.8.2
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.burst@1.8.2
 >>>>>>> Stashed changes
@@ -4056,7 +4271,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.render-pipelines.core@12.1.11
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.render-pipelines.core@12.1.11
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.render-pipelines.core@12.1.11
 >>>>>>> Stashed changes
@@ -4232,7 +4451,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.shadergraph@12.1.11
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.shadergraph@12.1.11
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.shadergraph@12.1.11
 >>>>>>> Stashed changes
@@ -4407,7 +4630,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.animation@7.0.10
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.animation@7.0.10
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.animation@7.0.10
 >>>>>>> Stashed changes
@@ -4608,7 +4835,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.pixel-perfect@5.0.3
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.pixel-perfect@5.0.3
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.pixel-perfect@5.0.3
 >>>>>>> Stashed changes
@@ -4693,7 +4924,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.psdimporter@6.0.7
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.psdimporter@6.0.7
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.psdimporter@6.0.7
 >>>>>>> Stashed changes
@@ -4852,7 +5087,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.sprite@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.sprite@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.sprite@1.0.0
 >>>>>>> Stashed changes
@@ -4912,7 +5151,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.spriteshape@7.0.7
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.spriteshape@7.0.7
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.spriteshape@7.0.7
 >>>>>>> Stashed changes
@@ -5086,7 +5329,11 @@ m_ResolvedPackages:
   source: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.tilemap@1.0.0
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.tilemap@1.0.0
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.tilemap@1.0.0
 >>>>>>> Stashed changes
@@ -5145,7 +5392,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.tilemap.extras@2.2.5
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.tilemap.extras@2.2.5
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.tilemap.extras@2.2.5
 >>>>>>> Stashed changes
@@ -5271,7 +5522,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.searcher@4.9.1
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.searcher@4.9.1
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.searcher@4.9.1
 >>>>>>> Stashed changes
@@ -5346,7 +5601,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.common@6.0.6
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.common@6.0.6
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.common@6.0.6
 >>>>>>> Stashed changes
@@ -5476,7 +5735,11 @@ m_ResolvedPackages:
   source: 1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolvedPath: C:\Users\James\Unity Projects\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.path@5.0.2
+=======
+  resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.path@5.0.2
+>>>>>>> Stashed changes
 =======
   resolvedPath: F:\GitHub\gameDevTeam11\F35_2D\Library\PackageCache\com.unity.2d.path@5.0.2
 >>>>>>> Stashed changes
