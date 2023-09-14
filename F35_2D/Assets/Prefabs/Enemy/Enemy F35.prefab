@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1041358878}
   - component: {fileID: 1041358877}
   - component: {fileID: 1041358876}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy F35
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -800,7 +800,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6844872146574408317}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AI GUN
   m_TagString: Untagged
   m_Icon: {fileID: 0}

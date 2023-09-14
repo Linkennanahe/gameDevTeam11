@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 592254065}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RIGHT GUN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 3095934711280286687}
   - component: {fileID: 3095934711280286686}
   - component: {fileID: 3095934711280286678}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy MIG35
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -583,7 +583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3095934712393147767}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LEFT GUN
   m_TagString: Untagged
   m_Icon: {fileID: 0}

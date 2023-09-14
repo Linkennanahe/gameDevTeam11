@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 4758568177823711301}
   - component: {fileID: 4758568177823711300}
   - component: {fileID: 4758568177823711308}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy F22
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -493,7 +493,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4758568177908399483}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AI GUN
   m_TagString: Untagged
   m_Icon: {fileID: 0}

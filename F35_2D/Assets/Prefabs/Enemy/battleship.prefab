@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 800197681908213254}
   - component: {fileID: 7310475484691166635}
   - component: {fileID: 46642643226854846}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: battleship
   m_TagString: Enemy
   m_Icon: {fileID: 0}

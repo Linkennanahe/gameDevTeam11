@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 2265988282515442875}
   - component: {fileID: 2265988282515442873}
   - component: {fileID: 2265988282515442872}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy Helicarrier
   m_TagString: Enemy
   m_Icon: {fileID: 0}
