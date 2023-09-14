@@ -58,8 +58,6 @@ public class Player : MonoBehaviour
 
     private void Death()
     {
-        // Perform any additional actions or effects before triggering the death animation.
-        // For example, you can play an explosion animation or sound.
 
         // Trigger the death animation if an Animator is attached.
         if (animator != null)

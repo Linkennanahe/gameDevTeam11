@@ -62,7 +62,7 @@ public class Missile : MonoBehaviour
                 hasCollided = true;
 
                 // Perform any actions or effects for colliding with obstacles.
-                // For example, you could add an explosion effect or damage the obstacle.
+                
 
                 // Disable the missile's renderer to make it invisible.
                 missileRenderer.enabled = false;
