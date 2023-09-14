@@ -99,11 +99,16 @@ public class Enemy : MonoBehaviour
         {
             // Decrement the current health by playerWeaponDamage.
             currentHealth -= playerWeaponDamage;
+
+            // Call the AddPointToTheScore function to update the score.
+            ScorePoints.AddPointToTheScore();
         }
         else if (collision.gameObject.CompareTag("Player Missile"))
         {
             // Decrement the current health by missileDamage.
             currentHealth -= missileDamage;
+            // Call the AddPointToTheScore function to update the score.
+            ScorePoints.AddPointToTheScore();
         }
         else if (collision.gameObject.CompareTag("Enemy"))
         {
@@ -130,8 +135,7 @@ public class Enemy : MonoBehaviour
         // Update Healthbar upon collision
         healthBar.UpdateHealthBar(currentHealth, maxHealth);
 
-        // Call the AddPointToTheScore function to update the score.
-        ScorePoints.AddPointToTheScore();
+       
     }
 
     private void Death()

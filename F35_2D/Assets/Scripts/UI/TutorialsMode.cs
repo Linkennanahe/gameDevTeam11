@@ -7,9 +7,13 @@ public class TutorialsMode : MonoBehaviour
 {
     public GameObject[] tutorialsText;
     public GameObject tutorialUi;
+    private bool tutorials, w, s, a, d, eOrq, space;
     // Start is called before the first frame update
     void Start()
     {
+        w=false; s=false; a=false; 
+        d=false; eOrq=false; space=false;
+
         this.ResetButtonOrder();
         if (Tutorials.tutorialMode)
             tutorialUi.SetActive(true);
@@ -60,18 +64,21 @@ public class TutorialsMode : MonoBehaviour
         //lets say that the button order has to do with XBOX controller inputs
         //and you have those inputs configured as the specified names in the input manager
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.W)&& Tutorials.tutorialMode)
         {
+
             //this.OnButtonPressed("D");
             tutorialsText[0].SetActive(false);
             tutorialsText[1].SetActive(true);
             tutorialsText[2].SetActive(false);
             tutorialsText[3].SetActive(false);
             tutorialsText[4].SetActive(false);
-
+            tutorialsText[5].SetActive(false);
+            w = true;
+            Tutorials.tutorialMode = false;
 
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.S)&& w)
         {
             //this.OnButtonPressed("A");
             tutorialsText[0].SetActive(false);
@@ -79,10 +86,13 @@ public class TutorialsMode : MonoBehaviour
             tutorialsText[2].SetActive(true);
             tutorialsText[3].SetActive(false);
             tutorialsText[4].SetActive(false);
+            tutorialsText[4].SetActive(false);
+            w = false;
+            s =true;
 
 
         }
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.A)&& s)
         {
             //this.OnButtonPressed("W");
             tutorialsText[0].SetActive(false);
@@ -90,9 +100,12 @@ public class TutorialsMode : MonoBehaviour
             tutorialsText[2].SetActive(false);
             tutorialsText[3].SetActive(true);
             tutorialsText[4].SetActive(false);
+            tutorialsText[5].SetActive(false);
+            s = false;
+            a =true;
 
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.D) && a)
         {
             //this.OnButtonPressed("S");
             tutorialsText[0].SetActive(false);
@@ -100,10 +113,25 @@ public class TutorialsMode : MonoBehaviour
             tutorialsText[2].SetActive(false);
             tutorialsText[3].SetActive(false);
             tutorialsText[4].SetActive(true);
-
+            tutorialsText[5].SetActive(false);
+            a = false;
+            d =true;
 
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if ((Input.GetKeyDown(KeyCode.Q)|| Input.GetKeyDown(KeyCode.E)) && d)
+        {
+            //this.OnButtonPressed("Q" OR "E");
+            tutorialsText[0].SetActive(false);
+            tutorialsText[1].SetActive(false);
+            tutorialsText[2].SetActive(false);
+            tutorialsText[3].SetActive(false);
+            tutorialsText[4].SetActive(false);
+            tutorialsText[5].SetActive(true);
+            d = false;
+            eOrq =true;
+
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && eOrq)
         {
             //this.OnButtonPressed("Space");
             tutorialsText[0].SetActive(false);
@@ -111,8 +139,10 @@ public class TutorialsMode : MonoBehaviour
             tutorialsText[2].SetActive(false);
             tutorialsText[3].SetActive(false);
             tutorialsText[4].SetActive(false);
+            tutorialsText[5].SetActive(false);
             tutorialUi.SetActive(false);
             Time.timeScale = 1.0f;
+            eOrq=false; 
             return;
 
         }

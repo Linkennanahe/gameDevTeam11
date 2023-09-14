@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class FireGun : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class FireGun : MonoBehaviour
     // Prefab for bullets and missiles.
     public GameObject BulletPrefab;
     public GameObject MissilePrefab;
+    
 
     // Force applied to bullets and missiles.
     public float bulletForce = 20f;
@@ -33,7 +35,8 @@ public class FireGun : MonoBehaviour
     // Maximum ammo counts for each weapon.
     public int maxBulletAmmo = 500; 
     public int maxMissileAmmo = 10;
-    
+
+    public Text bulletText, missileText;
     // Current ammo counts.
     private int currentBulletAmmo;
     private int currentMissileAmmo;
@@ -73,6 +76,9 @@ public class FireGun : MonoBehaviour
                 UpdateAmmoCount(currentWeaponIndex, currentAmmo - 1);
             }
         }
+
+        bulletText.text = currentBulletAmmo.ToString();
+        missileText.text = currentMissileAmmo.ToString();
 
         // Output the current ammo counts for debugging.
         Debug.Log("Current Bullet Ammo: " + currentBulletAmmo);
